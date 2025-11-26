@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ICRAME 2026 - International Conference on Recent Advances in Multidisciplinary Engineering."
+    />
+    <title>Venue | ICRAME 2026</title>
+
+    <!-- Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Outfit:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#020408",
+              surface: "#0B0E14",
+              surfaceHighlight: "#161b26",
+              primary: "#3b82f6",
+              primaryGlow: "#60a5fa",
+              secondary: "#10b981",
+              textMain: "#e2e8f0",
+              textMuted: "#94a3b8",
+              border: "#1e293b",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Outfit", "sans-serif"],
+            },
+            letterSpacing: {
+              tightest: "-0.04em",
+            },
+            backgroundImage: {
+              "grid-white":
+                "linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)",
+            },
+            animation: {
+              scroll: "scroll 60s linear infinite",
+            },
+            keyframes: {
+              scroll: {
+                "0%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(-50%)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="selection:bg-primary/30 selection:text-white">
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="fixed w-full z-50 border-b border-white/5 backdrop-blur-md transition-all duration-300 top-0"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <a
+          href="index.html"
+          class="font-display font-semibold text-xl tracking-tightest text-white flex items-center gap-2 relative z-50"
+        >
+          ICRAME
+          <span class="text-primary opacity-80">2026</span>
+        </a>
+
+        <div class="hidden lg:flex items-center gap-8">
+          <a
+            href="index.html"
+            class="text-sm font-medium text-textMuted hover:text-white transition-colors"
+          >
+            Home
+          </a>
+          <a
+            href="about.html"
+            class="text-sm font-medium text-textMuted hover:text-white transition-colors"
+          >
+            About
+          </a>
+          <a
+            href="tracks.html"
+            class="text-sm font-medium text-textMuted hover:text-white transition-colors"
+          >
+            Tracks
+          </a>
+          <a
+            href="speakers.html"
+            class="text-sm font-medium text-textMuted hover:text-white transition-colors"
+          >
+            Speakers
+          </a>
+          <a
+            href="committee.html"
+            class="text-sm font-medium text-textMuted hover:text-white transition-colors"
+          >
+            Committee
+          </a>
+          <a
+            href="venue.html"
+            class="text-sm font-medium text-white transition-colors"
+          >
+            Venue
+          </a>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <a
+            href="contact.html"
+            class="text-xs font-medium text-textMuted hover:text-white uppercase tracking-wider"
+          >
+            Contact
+          </a>
+          <a
+            href="registration.html"
+            class="bg-white text-black hover:bg-slate-200 text-sm font-medium px-4 py-2 rounded-full transition-colors"
+          >
+            Register
+          </a>
+
+          <!-- Theme Toggle Button (Desktop) -->
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle Theme"
+          >
+            <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+            <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-btn"
+          class="lg:hidden text-white relative z-50 p-2 hover:bg-white/10 rounded-lg transition-colors"
+          aria-label="Toggle mobile menu"
+        >
+          <i data-lucide="menu" stroke-width="1.5" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Modal Navigation -->
+      <div id="mobile-menu" class="mobile-menu-overlay">
+        <div class="mobile-menu-container">
+          <!-- Close Button -->
+          <button
+            id="mobile-close-btn"
+            class="absolute top-6 right-6 text-white p-2 hover:bg-white/10 rounded-lg transition-all hover:rotate-90 duration-300"
+            aria-label="Close menu"
+          >
+            <i data-lucide="x" stroke-width="1.5" class="w-6 h-6"></i>
+          </button>
+
+          <!-- Mobile Menu Content -->
+          <div class="mobile-menu-content">
+            <!-- Menu Links -->
+            <nav class="mobile-nav-links">
+              <a href="index.html" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-nav-link-text">Home</span>
+                <i
+                  data-lucide="arrow-right"
+                  class="w-5 h-5 mobile-nav-arrow"
+                ></i>
+              </a>
+              <a href="about.html" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-nav-link-text">About</span>
+                <i
+                  data-lucide="arrow-right"
+                  class="w-5 h-5 mobile-nav-arrow"
+                ></i>
+              </a>
+              <a href="tracks.html" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-nav-link-text">Tracks</span>
+                <i
+                  data-lucide="arrow-right"
+                  class="w-5 h-5 mobile-nav-arrow"
+                ></i>
+              </a>
+              <a href="speakers.html" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-nav-link-text">Speakers</span>
+                <i
+                  data-lucide="arrow-right"
+                  class="w-5 h-5 mobile-nav-arrow"
+                ></i>
+              </a>
+              <a href="committee.html" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-nav-link-text">Committee</span>
+                <i
+                  data-lucide="arrow-right"
+                  class="w-5 h-5 mobile-nav-arrow"
+                ></i>
+              </a>
+              <a href="venue.html" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-nav-link-text">Venue</span>
+                <i
+                  data-lucide="arrow-right"
+                  class="w-5 h-5 mobile-nav-arrow"
+                ></i>
+              </a>
+              <a href="contact.html" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-nav-link-text">Contact</span>
+                <i
+                  data-lucide="arrow-right"
+                  class="w-5 h-5 mobile-nav-arrow"
+                ></i>
+              </a>
+            </nav>
+
+            <!-- Mobile CTA & Theme Toggle -->
+            <div class="mobile-menu-footer">
+              <a
+                href="registration.html"
+                class="mobile-cta-btn"
+                data-mobile-link
+              >
+                <span>Register Now</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </a>
+
+              <!-- Theme Toggle (Mobile) -->
+              <button
+                id="theme-toggle-mobile"
+                class="mobile-theme-toggle"
+                aria-label="Toggle Theme"
+              >
+                <i data-lucide="sun" class="w-5 h-5"></i>
+                <span class="mobile-theme-text">Toggle Theme</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header
+      class="pt-32 pb-12 md:pt-48 md:pb-24 bg-surface relative overflow-hidden border-b border-white/5"
+    >
+      <div
+        class="absolute inset-0 bg-grid-white bg-[size:40px_40px] bg-grid-mask opacity-10 pointer-events-none"
+      ></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+        <h1
+          class="text-4xl md:text-6xl font-display font-semibold text-white mb-6 tracking-tight"
+        >
+          Conference Venue
+        </h1>
+        <p class="text-textMuted max-w-2xl mx-auto text-lg leading-relaxed">
+          Join us at the Maharishi University of Information Technology,
+          Lucknow.
+        </p>
+      </div>
+    </header>
+
+    <!-- Venue -->
+    <section id="venue" class="py-24 bg-background min-h-screen">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+          <!-- Venue Details -->
+          <div class="reveal">
+            <h2
+              class="text-3xl font-display font-semibold text-white mb-6 tracking-tight"
+            >
+              Conference Venue
+            </h2>
+            <div class="bg-surface border border-border rounded-2xl p-8 mb-8">
+              <h3 class="text-xl font-medium text-white mb-2">
+                Maharishi University of Information Technology
+              </h3>
+              <p class="text-textMuted mb-6">
+                Sitapur Road, Near IIM Lucknow <br />
+                Lucknow – 226013, Uttar Pradesh, India
+              </p>
+              <div class="flex gap-4">
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
+                  class="inline-flex items-center gap-2 text-primary hover:text-primaryGlow transition-colors text-sm font-medium"
+                >
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                  View on Google Maps
+                </a>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-medium text-white mb-4">How to Reach</h3>
+            <div class="space-y-4 mb-8">
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-surfaceHighlight flex items-center justify-center text-primary shrink-0"
+                >
+                  <i data-lucide="plane" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium text-sm">By Air</h4>
+                  <p class="text-sm text-textMuted">
+                    Chaudhary Charan Singh International Airport (LKO) is well
+                    connected to major cities. The venue is approximately 30 km
+                    from the airport.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-surfaceHighlight flex items-center justify-center text-primary shrink-0"
+                >
+                  <i data-lucide="train" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium text-sm">By Train</h4>
+                  <p class="text-sm text-textMuted">
+                    Lucknow Charbagh Railway Station (LKO) is the main station,
+                    about 15 km from the university.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-surfaceHighlight flex items-center justify-center text-primary shrink-0"
+                >
+                  <i data-lucide="bus" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium text-sm">By Road</h4>
+                  <p class="text-sm text-textMuted">
+                    Lucknow is well connected by road. The university is located
+                    on Sitapur Road, easily accessible by taxi or auto-rickshaw.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-medium text-white mb-4">
+              Nearby Attractions
+            </h3>
+            <ul class="grid sm:grid-cols-2 gap-3">
+              <li class="flex items-center gap-2 text-sm text-textMuted">
+                <i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>
+                Bara Imambara
+              </li>
+              <li class="flex items-center gap-2 text-sm text-textMuted">
+                <i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>
+                Rumi Darwaza
+              </li>
+              <li class="flex items-center gap-2 text-sm text-textMuted">
+                <i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>
+                Ambedkar Park
+              </li>
+              <li class="flex items-center gap-2 text-sm text-textMuted">
+                <i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>
+                Hazratganj Market
+              </li>
+            </ul>
+          </div>
+
+          <!-- Map -->
+          <div class="reveal delay-200 h-full min-h-[400px]">
+            <div
+              class="h-full w-full rounded-2xl overflow-hidden border border-border bg-surfaceHighlight relative"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.1617156302223!2d80.9279201!3d26.9300873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399956f63b4f2327%3A0xb820bdfd92601785!2sMaharishi%20University%20of%20Information%20Technology%20Lucknow%20Campus!5e0!3m2!1sen!2sin!4v1764136259983!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="absolute inset-0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-border py-12 bg-background">
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="w-6 h-6 rounded bg-white text-black flex items-center justify-center font-bold text-xs"
+          >
+            IC
+          </div>
+          <span class="text-white font-medium tracking-tight">ICRAME 2026</span>
+        </div>
+
+        <div class="text-sm text-textMuted">
+          © 2026 MUIT Lucknow. All rights reserved.
+        </div>
+
+        <div class="flex gap-6 text-sm text-textMuted">
+          <a href="#" class="hover:text-white transition-colors">
+            Ethics Policy
+          </a>
+          <a href="contact.html" class="hover:text-white transition-colors"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
