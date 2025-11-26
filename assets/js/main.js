@@ -163,3 +163,78 @@ if (htmlElement.classList.contains("light-mode")) {
 } else {
   updateToggleIcon(false);
 }
+
+// Tab Switching Logic for About Page
+const tabConference = document.getElementById("tab-conference");
+const tabUniversity = document.getElementById("tab-university");
+const contentConference = document.getElementById("content-conference");
+const contentUniversity = document.getElementById("content-university");
+
+function switchToConference() {
+  if (
+    tabConference &&
+    tabUniversity &&
+    contentConference &&
+    contentUniversity
+  ) {
+    // Update tab buttons
+    tabConference.classList.add("active", "bg-primary", "text-white");
+    tabConference.classList.remove(
+      "bg-transparent",
+      "text-textMuted",
+      "border",
+      "border-border"
+    );
+
+    tabUniversity.classList.remove("active", "bg-primary", "text-white");
+    tabUniversity.classList.add(
+      "bg-transparent",
+      "text-textMuted",
+      "border",
+      "border-border"
+    );
+
+    // Update content visibility
+    contentConference.classList.remove("hidden");
+    contentUniversity.classList.add("hidden");
+  }
+}
+
+function switchToUniversity() {
+  if (
+    tabConference &&
+    tabUniversity &&
+    contentConference &&
+    contentUniversity
+  ) {
+    // Update tab buttons
+    tabUniversity.classList.add("active", "bg-primary", "text-white");
+    tabUniversity.classList.remove(
+      "bg-transparent",
+      "text-textMuted",
+      "border",
+      "border-border"
+    );
+
+    tabConference.classList.remove("active", "bg-primary", "text-white");
+    tabConference.classList.add(
+      "bg-transparent",
+      "text-textMuted",
+      "border",
+      "border-border"
+    );
+
+    // Update content visibility
+    contentUniversity.classList.remove("hidden");
+    contentConference.classList.add("hidden");
+  }
+}
+
+// Add event listeners
+if (tabConference) {
+  tabConference.addEventListener("click", switchToConference);
+}
+
+if (tabUniversity) {
+  tabUniversity.addEventListener("click", switchToUniversity);
+}

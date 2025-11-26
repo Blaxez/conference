@@ -118,6 +118,12 @@
           >
             Venue
           </a>
+          <a
+            href="guidelines.html"
+            class="text-sm font-medium text-textMuted hover:text-white transition-colors"
+          >
+            Guidelines
+          </a>
         </div>
 
         <div class="hidden lg:flex items-center gap-4">
@@ -213,6 +219,17 @@
                   class="w-5 h-5 mobile-nav-arrow"
                 ></i>
               </a>
+              <a
+                href="guidelines.html"
+                class="mobile-nav-link"
+                data-mobile-link
+              >
+                <span class="mobile-nav-link-text">Guidelines</span>
+                <i
+                  data-lucide="arrow-right"
+                  class="w-5 h-5 mobile-nav-arrow"
+                ></i>
+              </a>
               <a href="contact.html" class="mobile-nav-link" data-mobile-link>
                 <span class="mobile-nav-link-text">Contact</span>
                 <i
@@ -271,75 +288,132 @@
     <!-- About & Publications -->
     <section id="about" class="py-24 bg-background min-h-screen">
       <div class="max-w-7xl mx-auto px-6">
-        <!-- About Section -->
-        <div class="mb-24 reveal">
-          <h2
-            class="text-3xl font-display font-semibold text-white mb-6 tracking-tight"
+        <!-- Tab Switcher -->
+        <div class="flex gap-4 mb-12 justify-center reveal">
+          <button
+            id="tab-conference"
+            class="tab-button active px-6 py-3 rounded-full font-medium transition-all duration-300 bg-primary text-white"
           >
-            About the Conference
-          </h2>
-          <p class="text-textMuted mb-6 leading-relaxed text-lg">
-            The International Conference on Recent Advancements and Innovation
-            in Engineering & Technology (ICRAIET 2026) aims to create a global
-            platform that brings together leading researchers, academicians,
-            practitioners, and industry experts to discuss emerging innovations
-            across multidisciplinary engineering domains. With rapid
-            advancements in artificial intelligence, automation, sustainable
-            technologies, and digital transformation, the conference provides
-            opportunities to explore new research directions and address
-            real-world engineering challenges.
-          </p>
-          <p class="text-textMuted mb-6 leading-relaxed text-lg">
-            The purpose of this conference is to facilitate knowledge sharing
-            and foster research collaborations by uniting experts from computer
-            science, electrical engineering, mechanical engineering, civil
-            engineering, and agricultural technologies under one umbrella. The
-            conference emphasizes the convergence of traditional engineering
-            with cutting-edge innovations such as AI, smart devices, IoT,
-            renewable energy systems, autonomous systems, and computational
-            modelling.
-          </p>
-          <p class="text-textMuted mb-6 leading-relaxed text-lg">
-            A key feature of ICRAIET 2026 is its strong multidisciplinary
-            orientation. Unlike traditional conferences that remain confined to
-            singular domains, this event promotes cross-disciplinary solutions
-            to modern engineering problems. The conference highlights applied
-            research through case studies, prototypes, and practical
-            demonstrations, ensuring that the proceedings offer readers both
-            theoretical depth and real-world relevance.
-          </p>
-          <p class="text-textMuted mb-6 leading-relaxed text-lg">
-            The conference also prioritizes global participation. More than 25%
-            of submissions and attendees are expected from international
-            universities, including Europe, the United States, Russia, and
-            Southeast Asia. Keynote speakers from abroad will contribute
-            chapters to the proceedings, ensuring an international academic
-            standard. This global outreach makes the conference distinct from
-            many national-level events in similar fields.
-          </p>
-          <p class="text-textMuted mb-6 leading-relaxed text-lg">
-            The intended audience includes researchers, faculty members,
-            postgraduate students, policymakers, R&D professionals, and
-            engineers seeking updated knowledge on state-of-the-art
-            technologies. The proceedings will serve as an essential reference
-            for emerging engineering areas and can be incorporated into advanced
-            engineering curricula at the postgraduate level.
-          </p>
-          <p class="text-textMuted mb-6 leading-relaxed text-lg">
-            Another special aspect of the conference is its emphasis on
-            sustainable development and engineering for societal impact. Tracks
-            such as renewable energy, environmental engineering, smart
-            agriculture, and intelligent healthcare technologies reinforce the
-            role of engineering in addressing global challenges.
-          </p>
-          <p class="text-textMuted leading-relaxed text-lg">
-            Finally, ICRAIET 2026 is committed to maintaining high academic and
-            editorial standards. All submitted papers undergo a rigorous
-            double-blind peer-review process, plagiarism screening, and
-            technical checks as per international publishing guidelines. The
-            collaboration with Taylor & Francis ensures global dissemination and
-            indexing, maximizing visibility and long-term academic value.
-          </p>
+            About Conference
+          </button>
+          <button
+            id="tab-university"
+            class="tab-button px-6 py-3 rounded-full font-medium transition-all duration-300 bg-transparent text-textMuted border border-border hover:border-primary/50"
+          >
+            About University
+          </button>
+        </div>
+
+        <!-- About Conference Section -->
+        <div id="content-conference" class="tab-content">
+          <div class="mb-24 reveal">
+            <h2
+              class="text-3xl font-display font-semibold text-white mb-6 tracking-tight"
+            >
+              About the Conference
+            </h2>
+            <p class="text-textMuted mb-6 leading-relaxed text-lg">
+              The International Conference on Recent Advancements and Innovation
+              in Engineering & Technology (ICRAIET 2026) aims to create a global
+              platform that brings together leading researchers, academicians,
+              practitioners, and industry experts to discuss emerging
+              innovations across multidisciplinary engineering domains. With
+              rapid advancements in artificial intelligence, automation,
+              sustainable technologies, and digital transformation, the
+              conference provides opportunities to explore new research
+              directions and address real-world engineering challenges.
+            </p>
+            <p class="text-textMuted mb-6 leading-relaxed text-lg">
+              The purpose of this conference is to facilitate knowledge sharing
+              and foster research collaborations by uniting experts from
+              computer science, electrical engineering, mechanical engineering,
+              civil engineering, and agricultural technologies under one
+              umbrella. The conference emphasizes the convergence of traditional
+              engineering with cutting-edge innovations such as AI, smart
+              devices, IoT, renewable energy systems, autonomous systems, and
+              computational modelling.
+            </p>
+            <p class="text-textMuted mb-6 leading-relaxed text-lg">
+              A key feature of ICRAIET 2026 is its strong multidisciplinary
+              orientation. Unlike traditional conferences that remain confined
+              to singular domains, this event promotes cross-disciplinary
+              solutions to modern engineering problems. The conference
+              highlights applied research through case studies, prototypes, and
+              practical demonstrations, ensuring that the proceedings offer
+              readers both theoretical depth and real-world relevance.
+            </p>
+            <p class="text-textMuted mb-6 leading-relaxed text-lg">
+              The conference also prioritizes global participation. More than
+              25% of submissions and attendees are expected from international
+              universities, including Europe, the United States, Russia, and
+              Southeast Asia. Keynote speakers from abroad will contribute
+              chapters to the proceedings, ensuring an international academic
+              standard. This global outreach makes the conference distinct from
+              many national-level events in similar fields.
+            </p>
+            <p class="text-textMuted mb-6 leading-relaxed text-lg">
+              The intended audience includes researchers, faculty members,
+              postgraduate students, policymakers, R&D professionals, and
+              engineers seeking updated knowledge on state-of-the-art
+              technologies. The proceedings will serve as an essential reference
+              for emerging engineering areas and can be incorporated into
+              advanced engineering curricula at the postgraduate level.
+            </p>
+            <p class="text-textMuted mb-6 leading-relaxed text-lg">
+              Another special aspect of the conference is its emphasis on
+              sustainable development and engineering for societal impact.
+              Tracks such as renewable energy, environmental engineering, smart
+              agriculture, and intelligent healthcare technologies reinforce the
+              role of engineering in addressing global challenges.
+            </p>
+            <p class="text-textMuted leading-relaxed text-lg">
+              Finally, ICRAIET 2026 is committed to maintaining high academic
+              and editorial standards. All submitted papers undergo a rigorous
+              double-blind peer-review process, plagiarism screening, and
+              technical checks as per international publishing guidelines. The
+              collaboration with Taylor & Francis ensures global dissemination
+              and indexing, maximizing visibility and long-term academic value.
+            </p>
+          </div>
+        </div>
+
+        <!-- About University Section -->
+        <div id="content-university" class="tab-content hidden">
+          <div class="mb-24 reveal">
+            <h2
+              class="text-3xl font-display font-semibold text-white mb-6 tracking-tight"
+            >
+              About Maharishi University of Information Technology
+            </h2>
+
+            <!-- University Image -->
+            <div class="mb-8 rounded-2xl overflow-hidden border border-border">
+              <img
+                src="assets/muit.jpeg"
+                alt="Maharishi University of Information Technology"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+
+            <p class="text-textMuted mb-6 leading-relaxed text-lg">
+              The Maharishi University of Information Technology (MUIT) was
+              established under MUIT Uttar Pradesh Act No. 31 of 2001
+              Notification No. 573 dated 06 October, 2001. Maharishi University
+              has developed phenomenally since its inception to be recognized as
+              a premier University in the country today.
+            </p>
+            <p class="text-textMuted mb-6 leading-relaxed text-lg">
+              It offers Bachelor, Master and Doctoral programmes in one of the
+              widest range of disciplines, including Science, Commerce,
+              Management, Humanities, Pharmacy, Engineering, Animation,
+              Journalism & Mass Communication, Law and Enrichment Courses.
+            </p>
+            <p class="text-textMuted leading-relaxed text-lg">
+              Our goal for every student is enlightenment — the systematic
+              development of full potential from within. This is the key to true
+              fulfillment in daily life and any career.
+            </p>
+          </div>
         </div>
 
         <!-- Highlights Section -->
@@ -762,8 +836,8 @@
         </div>
 
         <div class="flex gap-6 text-sm text-textMuted">
-          <a href="#" class="hover:text-white transition-colors">
-            Ethics Policy
+          <a href="guidelines.html" class="hover:text-white transition-colors">
+            Guidelines & Privacy
           </a>
           <a href="contact.html" class="hover:text-white transition-colors"
             >Contact</a
