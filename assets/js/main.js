@@ -99,15 +99,16 @@ const themeToggleMobileBtn = document.getElementById("theme-toggle-mobile");
 const htmlElement = document.documentElement;
 
 // Check for saved user preference, if any, on load of the website
-const currentTheme = localStorage.getItem("theme")
-  ? localStorage.getItem("theme")
-  : null;
+// Check for saved user preference, if any, on load of the website
+const currentTheme = localStorage.getItem("theme");
 
-if (currentTheme) {
-  if (currentTheme === "light") {
-    htmlElement.classList.add("light-mode");
-    updateToggleIcon(true);
-  }
+if (currentTheme === "dark") {
+  htmlElement.classList.remove("light-mode");
+  updateToggleIcon(false);
+} else {
+  // Default to light mode (either explicit 'light' or null)
+  htmlElement.classList.add("light-mode");
+  updateToggleIcon(true);
 }
 
 // Function to toggle theme
@@ -238,3 +239,32 @@ if (tabConference) {
 if (tabUniversity) {
   tabUniversity.addEventListener("click", switchToUniversity);
 }
+
+// Countdown Timer
+function updateCountdown() {
+  const targetDate = new Date("March 14, 2026 00:00:00").getTime();
+  const now = new Date().getTime();
+  const difference = targetDate - now;
+
+  if (difference > 0) {
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    const daysEl = document.getElementById("days");
+    const hoursEl = document.getElementById("hours");
+    const minutesEl = document.getElementById("minutes");
+    const secondsEl = document.getElementById("seconds");
+
+    if (daysEl) daysEl.innerText = days.toString().padStart(2, "0");
+    if (hoursEl) hoursEl.innerText = hours.toString().padStart(2, "0");
+    if (minutesEl) minutesEl.innerText = minutes.toString().padStart(2, "0");
+    if (secondsEl) secondsEl.innerText = seconds.toString().padStart(2, "0");
+  }
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();

@@ -1,4 +1,4 @@
-<html lang="en" class="scroll-smooth">
+﻿<html lang="en" class="scroll-smooth light-mode">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -316,6 +316,64 @@
             Francis.
           </p>
 
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 reveal delay-200 max-w-2xl"
+            id="countdown"
+          >
+            <div
+              class="bg-surface/50 border border-white/10 p-4 rounded-xl text-center backdrop-blur-sm hover:border-primary/30 transition-colors group"
+            >
+              <div
+                class="text-3xl md:text-4xl font-display font-bold text-white mb-1 group-hover:text-primary transition-colors"
+                id="days"
+              >
+                00
+              </div>
+              <div class="text-xs text-textMuted uppercase tracking-wider">
+                Days
+              </div>
+            </div>
+            <div
+              class="bg-surface/50 border border-white/10 p-4 rounded-xl text-center backdrop-blur-sm hover:border-primary/30 transition-colors group"
+            >
+              <div
+                class="text-3xl md:text-4xl font-display font-bold text-white mb-1 group-hover:text-primary transition-colors"
+                id="hours"
+              >
+                00
+              </div>
+              <div class="text-xs text-textMuted uppercase tracking-wider">
+                Hours
+              </div>
+            </div>
+            <div
+              class="bg-surface/50 border border-white/10 p-4 rounded-xl text-center backdrop-blur-sm hover:border-primary/30 transition-colors group"
+            >
+              <div
+                class="text-3xl md:text-4xl font-display font-bold text-white mb-1 group-hover:text-primary transition-colors"
+                id="minutes"
+              >
+                00
+              </div>
+              <div class="text-xs text-textMuted uppercase tracking-wider">
+                Minutes
+              </div>
+            </div>
+            <div
+              class="bg-surface/50 border border-white/10 p-4 rounded-xl text-center backdrop-blur-sm hover:border-primary/30 transition-colors group"
+            >
+              <div
+                class="text-3xl md:text-4xl font-display font-bold text-white mb-1 group-hover:text-primary transition-colors"
+                id="seconds"
+              >
+                00
+              </div>
+              <div class="text-xs text-textMuted uppercase tracking-wider">
+                Seconds
+              </div>
+            </div>
+          </div>
+
           <div class="flex flex-wrap items-center gap-4 reveal delay-300">
             <a
               href="registration.html"
@@ -586,7 +644,7 @@
       </div>
     </section>
 
-    <!-- Speakers (Redesigned) -->
+    <!-- Speakers -->
     <section
       id="speakers"
       class="py-24 border-t border-border bg-surface/30 overflow-hidden"
@@ -601,677 +659,208 @@
           <h2
             class="text-3xl font-display font-semibold text-white tracking-tight"
           >
-            Speakers &amp; Program Advisors
+            Keynote Speakers
           </h2>
         </div>
-        <div
-          class="relative w-full overflow-hidden marquee-mask group reveal delay-100"
-        >
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+          <!-- Speaker 1 -->
           <div
-            class="flex w-max animate-[scroll_120s_linear_infinite] group-hover:[animation-play-state:paused] gap-6 px-6"
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
           >
-            <!-- Speaker Cards -->
-            <div class="flex gap-6">
-              <!-- Loop 1 -->
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AL
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Akhlesh Lakhtakia
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  Penn State University, USA
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Alexander Shalin
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  ITMO University, Russia
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  GK
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Grzegorz Królczyk
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  Opole University of Technology, Poland
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  JG
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Jose Arturo Garza-Reyes
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  University of Derby, UK
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AM
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Anshumali Mishra
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  University of Oulu, Finland
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  DS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Devendra Saroj
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  University of Surrey, UK
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AV
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Avimanyu Vatsa
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  Fairleigh Dickinson University, USA
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  HS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) HS Srivastava
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  Scientist SG, ISRO–IIRS, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  DM
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) D.K. Mishra
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  ISRO, Lucknow, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  PG
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) P.K. Garg
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  IIT Roorkee, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  MT
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Manoj Tripathi
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  IIT Roorkee, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  DS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Dharmendra Singh
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  IIT Roorkee, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  KS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) K.P. Singh
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  IIT BHU, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  RT
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Rajneesh Tyagi
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  IIT BHU, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  SP
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) S.K. Panda
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  IIT BHU, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AY
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Avadhesh Yadav
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  NIT Kurukshetra, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  VB
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) V.K. Bajpai
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  NIT Kurukshetra, India
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  KS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Kamlesh Kumar Singh
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  Amity University, Lucknow
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  OS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Omveer Singh
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  GBU, Greater Noida
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  PT
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Prabhakar Tiwari
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  MMMUT Gorakhpur
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AT
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) A.N. Tiwari
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  MMMUT Gorakhpur
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  RK
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) R.A. Khan
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">BBAU Lucknow</p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AK
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Anil Kumar
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">VIT Bhopal</p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  DK
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Dilip Kumar JB Saini
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  Dayananda Sagar University
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AT
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Anurag Tiwari
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  BBDITM Lucknow
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  KA
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) K.V. Arya
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  IIITM Gwalior
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AT
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Aditya Trivedi
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  IIITM Gwalior
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  SJ
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Siddharth Jain
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">COER Roorkee</p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  AS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Ankit Srivastava
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  RML University
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  ND
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Namrata Dhanda
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  Amity University Lucknow
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 hover:border-primary/40 transition-all hover:bg-surfaceHighlight hover:-translate-y-1 group relative overflow-hidden"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                ></div>
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted group-hover:scale-105 transition-transform group-hover:border-primary/30 relative z-10 shadow-lg"
-                >
-                  SS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Santosh Kumar Shukla
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  BBDITM Lucknow
-                </p>
-              </div>
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Dr. Pramod Kumar Yadav.jpg"
+                alt="Dr. Pramod Kumar Yadav"
+                class="w-full h-full object-cover"
+              />
             </div>
-            <!-- Loop 2 -->
-            <div class="flex gap-6">
-              <!-- Duplicates -->
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 group relative overflow-hidden"
-              >
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted"
-                >
-                  AL
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Akhlesh Lakhtakia
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  Penn State University, USA
-                </p>
-              </div>
-              <div
-                class="w-80 bg-surface border border-border rounded-2xl p-6 flex flex-col items-center text-center shrink-0 group relative overflow-hidden"
-              >
-                <div
-                  class="w-24 h-24 rounded-full bg-surfaceHighlight border-2 border-border mb-5 flex items-center justify-center text-xl font-bold text-textMuted"
-                >
-                  AS
-                </div>
-                <h4
-                  class="text-white font-display font-medium text-lg mb-1 relative z-10"
-                >
-                  Prof. (Dr.) Alexander Shalin
-                </h4>
-                <p class="text-sm text-textMuted relative z-10">
-                  ITMO University, Russia
-                </p>
-              </div>
-              <!-- (Visual buffer for seamless loop, first two are sufficient to show continuity in preview but full list ensures smooth) -->
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              Dr. Pramod Kumar Yadav
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              Assistant Professor<br />Department of Computer Science and
+              Engineering
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
+            >
+              National Institute of Technology, Srinagar<br />Hazratbal,
+              Srinagar, Jammu & Kashmir, India
+            </p>
+          </div>
+
+          <!-- Speaker 2 -->
+          <div
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
+          >
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Dr. Mohammed Javed.jpg"
+                alt="Dr. Mohammed Javed"
+                class="w-full h-full object-cover"
+              />
             </div>
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              Dr. Mohammed Javed
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              Assistant Professor
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
+            >
+              Indian Institute of Information Technology (IIIT) Allahabad
+            </p>
+          </div>
+
+          <!-- Speaker 3 -->
+          <div
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
+          >
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Dr. Saurabh Mani Tripathi.jpg"
+                alt="Dr. Saurabh Mani Tripathi"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              Dr. Saurabh Mani Tripathi
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              Associate Professor, Electrical Engineering Department
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
+            >
+              Kamla Nehru Institute of Technology (KNIT), Sultanpur
+            </p>
+          </div>
+
+          <!-- Speaker 4 -->
+          <div
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
+          >
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Avimanyou Vatsa, Ph.D..jpg"
+                alt="Avimanyou Vatsa, Ph.D."
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              Avimanyou Vatsa, Ph.D.
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              Associate Professor<br />Olsen College of Engineering and Science
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
+            >
+              1000 River Road, T-BE2-01<br />Teaneck, New Jersey 07666
+            </p>
+          </div>
+
+          <!-- Speaker 5 -->
+          <div
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
+          >
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Dr. Arun Kumar Verma.jpg"
+                alt="Dr. Arun Kumar Verma"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              Dr. Arun Kumar Verma
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              Associate Professor, Electrical Engineering Department
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
+            >
+              Indian Institute of Technology (IIT) Jammu<br />Jagti, NH-44,
+              Nagrota
+            </p>
+          </div>
+
+          <!-- Speaker 6 -->
+          <div
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
+          >
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Sanjay Agrawal.jpg"
+                alt="Sanjay Agrawal"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              Sanjay Agrawal
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              Professor, Electrical Engineering<br />Former Pro-Vice Chancellor
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
+            >
+              Chhattisgarh Swami Vivekananda Technical University<br />(State
+              Government University), Bhilai, Chhattisgarh, India
+            </p>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Important Dates -->
     <section
       id="dates"
@@ -1496,7 +1085,7 @@
                 <h3 class="text-white font-medium text-lg">
                   Shri Ajay Prakash Shrivastava
                 </h3>
-                <p class="text-textMuted text-sm">Hon’ble Chancellor, MUIT</p>
+                <p class="text-textMuted text-sm">Honâ€™ble Chancellor, MUIT</p>
               </div>
             </div>
             <!-- Patrons -->
@@ -1712,7 +1301,7 @@
                 <p class="text-textMuted text-sm mb-6">
                   Sitapur Road, Near IIM Lucknow
                   <br />
-                  Lucknow – 226013, Uttar Pradesh, India
+                  Lucknow â€“ 226013, Uttar Pradesh, India
                 </p>
               </div>
 
@@ -1756,28 +1345,143 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-border py-12 bg-background">
-      <div
-        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6"
-      >
-        <div class="flex items-center gap-2">
-          <div
-            class="w-6 h-6 rounded bg-white text-black flex items-center justify-center font-bold text-xs"
-          >
-            IC
+    <footer class="border-t border-border pt-16 pb-8 bg-background">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <!-- Brand -->
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 mb-4">
+              <div
+                class="w-8 h-8 rounded bg-white text-black flex items-center justify-center font-bold text-sm"
+              >
+                IC
+              </div>
+              <span
+                class="text-white font-display font-semibold tracking-tight text-xl"
+                >ICRAME 2026</span
+              >
+            </div>
+            <p class="text-textMuted text-sm leading-relaxed">
+              International Conference on Recent Advances in Multidisciplinary
+              Engineering.
+            </p>
+            <div class="flex gap-4 mt-6">
+              <a
+                href="https://facebook.com/yourconference"
+                class="text-textMuted hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <i data-lucide="facebook" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="https://linkedin.com/company/yourconference"
+                class="text-textMuted hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <i data-lucide="linkedin" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="#"
+                class="text-textMuted hover:text-primary transition-colors"
+                aria-label="WhatsApp"
+              >
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </a>
+            </div>
           </div>
-          <span class="text-white font-medium tracking-tight">ICRAME 2026</span>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-white font-medium mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm text-textMuted">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-primary transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:text-primary transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tracks.html"
+                  class="hover:text-primary transition-colors"
+                  >Tracks</a
+                >
+              </li>
+              <li>
+                <a
+                  href="speakers.html"
+                  class="hover:text-primary transition-colors"
+                  >Speakers</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- More Links -->
+          <div>
+            <h4 class="text-white font-medium mb-4">Information</h4>
+            <ul class="space-y-2 text-sm text-textMuted">
+              <li>
+                <a
+                  href="committee.html"
+                  class="hover:text-primary transition-colors"
+                  >Committee</a
+                >
+              </li>
+              <li>
+                <a
+                  href="venue.html"
+                  class="hover:text-primary transition-colors"
+                  >Venue</a
+                >
+              </li>
+              <li>
+                <a
+                  href="guidelines.html"
+                  class="hover:text-primary transition-colors"
+                  >Guidelines</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:text-primary transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Register -->
+          <div>
+            <h4 class="text-white font-medium mb-4">Join Us</h4>
+            <p class="text-textMuted text-sm mb-4">
+              Registration is now open for authors and attendees.
+            </p>
+            <a
+              href="registration.html"
+              class="inline-flex items-center gap-2 text-primary hover:text-primaryGlow transition-colors text-sm font-medium"
+            >
+              Register Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="text-sm text-textMuted">
-          © 2026 MUIT Lucknow. All rights reserved.
-        </div>
-
-        <div class="flex gap-6 text-sm text-textMuted">
-          <a href="guidelines.html" class="hover:text-white transition-colors">
-            Guidelines & Privacy
-          </a>
-          <a href="#" class="hover:text-white transition-colors">Contact</a>
+        <div
+          class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left"
+        >
+          <div class="text-sm text-textMuted">
+            © 2026 ICRAME-2026 | Maharishi University of Information Technology,
+            Lucknow, India. All Rights Reserved.
+          </div>
         </div>
       </div>
     </footer>
