@@ -242,7 +242,7 @@ if (tabUniversity) {
 
 // Countdown Timer
 function updateCountdown() {
-  const targetDate = new Date("March 14, 2026 00:00:00").getTime();
+  const targetDate = new Date("March 12, 2026 00:00:00").getTime();
   const now = new Date().getTime();
   const difference = targetDate - now;
 

@@ -4,13 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ICRAIET 2026 - International Conference on Recent Advancements and Innovation in Engineering & Technology. March 14-15, 2026 at MUIT Lucknow. Published by Taylor & Francis."
+      content="ICRAME 2026 - International Conference on Recent Advancements and Innovation in Engineering & Technology. March 14-15, 2026 at MUIT Lucknow. Published by Taylor & Francis."
     />
     <meta
       name="keywords"
-      content="ICRAIET 2026, ICRAME 2026, Multidisciplinary Engineering, Taylor Francis, Scopus Indexing, AI Conference, IoT, Machine Learning, Engineering Conference 2026"
+      content="ICRAME 2026, ICRAME 2026, Multidisciplinary Engineering, Taylor Francis, Scopus Indexing, AI Conference, IoT, Machine Learning, Engineering Conference 2026"
     />
-    <title>ICRAIET 2026 | MUIT Lucknow | Taylor & Francis</title>
+    <title>ICRAME 2026 | MUIT Lucknow | Taylor & Francis</title>
 
     <!-- Fonts: Inter and Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -270,19 +270,29 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
+    <header
+      class="relative min-h-[100dvh] flex flex-col justify-center overflow-hidden"
+    >
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="assets/hero_bg.png"
+          alt="Background"
+          class="w-full h-full object-cover opacity-100"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background"
+        ></div>
+      </div>
+
       <div
-        class="absolute inset-0 bg-grid-white bg-[size:40px_40px] bg-grid-mask opacity-20 pointer-events-none"
-      ></div>
-      <div
-        class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/20 blur-[100px] rounded-full pointer-events-none"
-      ></div>
-      <div
-        class="absolute bottom-0 left-0 -ml-20 w-72 h-72 bg-secondary/10 blur-[100px] rounded-full pointer-events-none"
+        class="absolute inset-0 bg-grid-white bg-[size:40px_40px] bg-grid-mask opacity-10 pointer-events-none z-0"
       ></div>
 
-      <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <div class="max-w-4xl">
+      <div
+        class="max-w-7xl mx-auto px-6 relative z-10 w-full flex-grow flex flex-col justify-center pt-28 pb-12 lg:pt-32 lg:pb-8"
+      >
+        <div class="max-w-5xl">
           <div
             class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-medium tracking-wide mb-8 reveal"
           >
@@ -294,23 +304,29 @@
                 class="relative inline-flex rounded-full h-2 w-2 bg-primary"
               ></span>
             </span>
-            March 14–15, 2026 • MUIT Lucknow, India
+            March 12–13, 2026 • MUIT Lucknow, India
           </div>
 
           <h1
-            class="text-5xl md:text-7xl font-display font-semibold tracking-tightest leading-[1.1] mb-6 text-white reveal delay-100"
+            class="font-display font-semibold tracking-tightest leading-[1.1] mb-6 text-white reveal delay-100"
           >
-            International Conference on Recent Advances in
-            <br />
+            <span class="block text-[clamp(2rem,5vw,4.5rem)]">
+              <img
+                src="assets/logo.png"
+                alt="ICRAME 2026 Logo"
+                class="inline-block w-[clamp(3rem,6vw,5rem)] h-[clamp(3rem,6vw,5rem)] mr-2 align-middle mb-2"
+              />
+              International Conference on Recent Advances in
+            </span>
             <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-indigo-400"
+              class="block text-[clamp(2rem,5vw,4.5rem)] text-transparent bg-clip-text bg-gradient-to-r from-primary to-indigo-400"
             >
               Multidisciplinary Engineering
             </span>
           </h1>
 
           <p
-            class="text-lg md:text-xl text-textMuted max-w-2xl mb-10 leading-relaxed reveal delay-200"
+            class="text-[clamp(1rem,1.2vw,1.25rem)] text-textMuted max-w-2xl mb-10 leading-relaxed reveal delay-200"
           >
             A global forum exploring the convergence of AI, IoT, Smart Grids,
             Robotics, and Sustainable Agriculture. Published by Taylor &amp;
@@ -405,31 +421,45 @@
         </div>
 
         <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24 pt-8 border-t border-white/5 reveal delay-500"
+          class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 pt-8 border-t border-white/5 reveal delay-500"
         >
           <div>
-            <div class="text-2xl font-display font-semibold text-white">
+            <div
+              class="text-xl md:text-2xl font-display font-semibold text-white"
+            >
               Scopus
             </div>
-            <div class="text-sm text-textMuted mt-1">Indexing Eligibility</div>
+            <div class="text-xs md:text-sm text-textMuted mt-1">
+              Indexing Eligibility
+            </div>
           </div>
           <div>
-            <div class="text-2xl font-display font-semibold text-white">
+            <div
+              class="text-xl md:text-2xl font-display font-semibold text-white"
+            >
               Taylor &amp; Francis
             </div>
-            <div class="text-sm text-textMuted mt-1">Book Proceedings</div>
+            <div class="text-xs md:text-sm text-textMuted mt-1">
+              Book Proceedings
+            </div>
           </div>
           <div>
-            <div class="text-2xl font-display font-semibold text-white">
+            <div
+              class="text-xl md:text-2xl font-display font-semibold text-white"
+            >
               100+
             </div>
-            <div class="text-sm text-textMuted mt-1">Research Papers</div>
+            <div class="text-xs md:text-sm text-textMuted mt-1">
+              Research Papers
+            </div>
           </div>
           <div>
-            <div class="text-2xl font-display font-semibold text-white">
+            <div
+              class="text-xl md:text-2xl font-display font-semibold text-white"
+            >
               Hybrid
             </div>
-            <div class="text-sm text-textMuted mt-1">
+            <div class="text-xs md:text-sm text-textMuted mt-1">
               Physical &amp; Virtual
             </div>
           </div>
@@ -680,8 +710,8 @@
               class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
             >
               <img
-                src="assets/Dr. Pramod Kumar Yadav.jpg"
-                alt="Dr. Pramod Kumar Yadav"
+                src="assets/Avimanyou Vatsa, Ph.D..jpg"
+                alt="Dr. Avimanyou Vatsa"
                 class="w-full h-full object-cover"
               />
             </div>
@@ -689,20 +719,115 @@
             <h4
               class="text-white font-display font-semibold text-xl mb-2 relative z-10"
             >
-              Dr. Pramod Kumar Yadav
+              Dr. Avimanyou Vatsa
             </h4>
             <p
               class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
             >
-              Assistant Professor<br />Department of Computer Science and
-              Engineering
+              Fairleigh Dickinson University (FDU)<br />New Jersey, USA
             </p>
             <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
             <p
-              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
+              class="text-xs text-textMuted/70 relative z-10 font-medium tracking-wider"
             >
-              National Institute of Technology, Srinagar<br />Hazratbal,
-              Srinagar, Jammu & Kashmir, India
+              Email: avatsa@fdu.edu
+            </p>
+          </div>
+
+          <!-- Speaker 2 -->
+          <div
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
+          >
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Dr. Ayoub Khan.jpg"
+                alt="Dr. Ayoub Khan"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              Dr. Ayoub Khan
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              University of Bisha<br />Saudi Arabia
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium tracking-wider"
+            >
+              Email: softayoub@gmail.com
+            </p>
+          </div>
+
+          <!-- Speaker 3 -->
+          <div
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
+          >
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Dr. S. D. Samantaray.jpg"
+                alt="Dr. S. D. Samantaray"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              (Dr.) S. D. Samantaray
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              G. B. Pant University of Agriculture and Technology<br />Uttarakhand,
+              India
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium tracking-wider"
+            >
+              Email: sdsray@gmail.com
+            </p>
+          </div>
+
+          <!-- Speaker 4 -->
+          <div
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
+          >
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Sanjay Agrawal.jpg"
+                alt="Prof. (Dr.) Sanjay Agrawal"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              Prof. (Dr.) Sanjay Agrawal
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              IGNOU, New Delhi<br />(Formerly at CSVTU)
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium tracking-wider"
+            >
+              Email: 09sanjay76@gmail.com,<br />sanjay.agrawal@ignou.ac.in
             </p>
           </div>
 
@@ -728,17 +853,49 @@
             <p
               class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
             >
-              Assistant Professor
+              Indian Institute of Information Technology (IIIT) Prayagraj, UP
             </p>
             <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
             <p
-              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
+              class="text-xs text-textMuted/70 relative z-10 font-medium tracking-wider"
             >
-              Indian Institute of Information Technology (IIIT) Allahabad
+              Email: javed@iiita.ac.in
             </p>
           </div>
 
           <!-- Speaker 3 -->
+          <div
+            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
+          >
+            <div
+              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
+            >
+              <img
+                src="assets/Dr. Arun Kumar Verma.jpg"
+                alt="Dr. Arun Kumar Verma"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <h4
+              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
+            >
+              Dr. Arun Kumar Verma
+            </h4>
+            <p
+              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
+            >
+              Indian Institute of Technology (IIT) Jammu
+            </p>
+            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
+            <p
+              class="text-xs text-textMuted/70 relative z-10 font-medium tracking-wider"
+            >
+              Email: arun.verma@iitjammu.ac.in
+            </p>
+          </div>
+
+          <!-- Speaker 4 -->
           <div
             class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
           >
@@ -767,104 +924,6 @@
               class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
             >
               Kamla Nehru Institute of Technology (KNIT), Sultanpur
-            </p>
-          </div>
-
-          <!-- Speaker 4 -->
-          <div
-            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
-          >
-            <div
-              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
-            >
-              <img
-                src="assets/Avimanyou Vatsa, Ph.D..jpg"
-                alt="Avimanyou Vatsa, Ph.D."
-                class="w-full h-full object-cover"
-              />
-            </div>
-
-            <h4
-              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
-            >
-              Avimanyou Vatsa, Ph.D.
-            </h4>
-            <p
-              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
-            >
-              Associate Professor<br />Olsen College of Engineering and Science
-            </p>
-            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
-            <p
-              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
-            >
-              1000 River Road, T-BE2-01<br />Teaneck, New Jersey 07666
-            </p>
-          </div>
-
-          <!-- Speaker 5 -->
-          <div
-            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
-          >
-            <div
-              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
-            >
-              <img
-                src="assets/Dr. Arun Kumar Verma.jpg"
-                alt="Dr. Arun Kumar Verma"
-                class="w-full h-full object-cover"
-              />
-            </div>
-
-            <h4
-              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
-            >
-              Dr. Arun Kumar Verma
-            </h4>
-            <p
-              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
-            >
-              Associate Professor, Electrical Engineering Department
-            </p>
-            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
-            <p
-              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
-            >
-              Indian Institute of Technology (IIT) Jammu<br />Jagti, NH-44,
-              Nagrota
-            </p>
-          </div>
-
-          <!-- Speaker 6 -->
-          <div
-            class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 flex flex-col items-center text-center transition-colors duration-300 hover:border-white/20"
-          >
-            <div
-              class="w-48 h-48 rounded-2xl bg-surfaceHighlight/20 border border-white/5 mb-6 flex items-center justify-center overflow-hidden relative z-10 shadow-xl"
-            >
-              <img
-                src="assets/Sanjay Agrawal.jpg"
-                alt="Sanjay Agrawal"
-                class="w-full h-full object-cover"
-              />
-            </div>
-
-            <h4
-              class="text-white font-display font-semibold text-xl mb-2 relative z-10"
-            >
-              Sanjay Agrawal
-            </h4>
-            <p
-              class="text-sm text-textMuted relative z-10 mb-3 leading-relaxed"
-            >
-              Professor, Electrical Engineering<br />Former Pro-Vice Chancellor
-            </p>
-            <div class="h-px w-12 bg-border mb-3 relative z-10"></div>
-            <p
-              class="text-xs text-textMuted/70 relative z-10 font-medium uppercase tracking-wider"
-            >
-              Chhattisgarh Swami Vivekananda Technical University<br />(State
-              Government University), Bhilai, Chhattisgarh, India
             </p>
           </div>
         </div>
